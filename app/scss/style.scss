@@ -17,23 +17,24 @@
     display: flex;
     &-item + .menu__list-item {
       padding-left: 35px;
+      
     }
     &-link {
       color: $title;
-      padding-bottom: 1px;
+      padding: 0 2px 1px;
       transition: all 0.3s;
-      @extend %quicksand-400;
+      @extend %roboto-400;
       &:hover {
         color: $accent;
         border-bottom: 1px solid $accent;
-        @extend %quicksand-500;
+        @extend %roboto-700;
       }
     }
   }
   &__list-link--active {
     color: $accent;
     border-bottom: 1px solid $accent;
-    @extend %quicksand-500;
+    @extend %roboto-700;
   }
 }
 
@@ -141,6 +142,7 @@
     padding: 12px 26px;
     box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
     cursor: pointer;
+    color: #fff;
   }
 }
 
